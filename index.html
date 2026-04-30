@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my mortgage calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="overall">
+      <div class="all">
+        <!-- <form id="form"> -->
+        <div class="mortcalc">
+          <div class="text">
+            <h1>Mortgage Calculator</h1>
+            <p id="clear">Clear All</p>
+          </div>
+          <div class="input-amount">
+            <p>mortgage amount</p>
+            <input
+              type="text"
+              id="input1"
+              placeholder="enter amount"
+              required
+            />
+            <p id="error1"></p>
+            <!-- <span class="span1">£</span> -->
+          </div>
+          <div class="interest">
+            <div class="term">
+              <p>mortgage term</p>
+              <input type="text" id="input2" placeholder="years" required />
+              <p id="error2"></p>
+              <!-- <span class="span2">years</span> -->
+            </div>
+            <div class="inte">
+              <p>interest rate</p>
+              <input type="text" id="input3" placeholder="%" required />
+              <p id="error3"></p>
+              <!-- <span class="span3">%</span> -->
+            </div>
+          </div>
+          <div class="repay">
+            <h2>Mortgage Type</h2>
+            <div class="repayment">
+              <input type="radio" name="radio" id="radio1" />
+              <p>Repayment</p>
+            </div>
+            <div class="only-int">
+              <input type="radio" name="radio" id="radio2" />
+              <p>Interest rate</p>
+            </div>
+          </div>
+          <button class="calculate">
+            <span>📱</span>
+            <p>calculate Repayments</p>
+          </button>
+        </div>
+        <!-- </form> -->
+        <div class="result">
+          <div class="default">
+            <img src="./images/illustration-empty.svg" alt="" />
+            <h1>Results shown here</h1>
+            <p>
+              complete the form and click "calculate repayments" to see what
+              your monthly repayments would be
+            </p>
+          </div>
+          <div class="mainresult">
+            <h1>Your Results</h1>
+            <p>
+              Your results are shown below based on the information you
+              provided.To adjust the results, edit the form and click"calculate
+              repayment" again
+            </p>
+            <div class="main">
+              <div class="main1">
+                <p>Your monthly repayment</p>
+                <h1 id="monthly">£0000.00</h1>
+              </div>
+              <div class="main2">
+                <p>total you will repay over the term</p>
+                <h4 id="overall">£0000.00</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
